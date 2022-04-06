@@ -231,13 +231,13 @@ export const server = () => {
     gulp.watch(path.watch.html, html);
     gulp.watch(path.watch.scss, scss());
     gulp.watch(path.watch.js, js());
-    gulp.watch(path.watch.img, image);
-    gulp.watch(path.watch.imgF, gulp.parallel(webp, avif));
+    gulp.watch(path.watch.img, image());
+    //gulp.watch(path.watch.imgF, gulp.parallel(webp, avif));
     gulp.watch(path.watch.imgF, webp);
     gulp.watch(path.watch.assets, copy);
 };
 
-const clear = () =>
+export const clear = () =>
     del(path.dist.base, {
         force: true,
     });
