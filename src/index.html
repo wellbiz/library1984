@@ -15,9 +15,9 @@
             <div class="container">
                 <img src="img/logo.svg" alt="логотип Big Brother">
 
-                <button class="header__btn-add">Добавить книгу</button>
+                <button class="header__btn-add" area-label="добавить книгу">Добавить книгу</button>
 
-                <button class="header__btn header__btn_search">поиск</button>
+                <button class="header__btn header__btn_search" area-label="поиск">поиск</button>
             </div>
         </header>
         <div class="container library__titles">
@@ -25,7 +25,7 @@
             <p class="library__count">3 книг</p>
             <div class="library__fields fields">
                 <div class="fields__block">
-                    <button class="fields__btn fields__btn_sort">
+                    <button class="fields__btn fields__btn_sort" area-label="сортировать по рейтингу">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 18H9V16H3V18ZM3 6V8H21V6H3ZM3 13H15V11H3V13Z" fill="white" />
                         </svg>
@@ -34,15 +34,16 @@
 
                     <ul class="fields__list fields__list_sort">
                         <li class="fields__item">
-                            <button class="fields__button">от большего</button>
+                            <button class="fields__button" area-label="от большего">от большего</button>
                         </li>
-                        <li class="fields__item"><button class="fields__button">от меньшего</button>
+                        <li class="fields__item"><button class="fields__button" area-label="от меньшего">от
+                                меньшего</button>
                         </li>
                     </ul>
                 </div>
 
                 <div class="fields__block">
-                    <button class="fields__btn fields__btn_filter">
+                    <button class="fields__btn fields__btn_filter" area-label="фильтр">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M4.24999 5.61C6.26999 8.2 9.99999 13 9.99999 13V19C9.99999 19.55 10.45 20 11 20H13C13.55 20 14 19.55 14 19V13C14 13 17.72 8.2 19.74 5.61C20.25 4.95 19.78 4 18.95 4H5.03999C4.20999 4 3.73999 4.95 4.24999 5.61Z"
@@ -54,16 +55,16 @@
 
                     <ul class="fields__list fields__list_sort">
                         <li class="fields__item">
-                            <button class="fields__button"> хочу прочитать</button>
+                            <button class="fields__button" area-label="хочу прочитать"> хочу прочитать</button>
                         </li>
                         <li class="fields__item">
-                            <button class="fields__button"> прочитал</button>
+                            <button class="fields__button" area-label="прочитал"> прочитал</button>
                         </li>
                         <li class="fields__item">
-                            <button class="fields__button"> читаю</button>
+                            <button class="fields__button" area-label="читаю"> читаю</button>
                         </li>
                         <li class="fields__item">
-                            <button class="fields__button"> не дочитал</button>
+                            <button class="fields__button" area-label="не дочитал"> не дочитал</button>
                         </li>
                     </ul>
                 </div>
@@ -145,9 +146,9 @@
         <header class="header add__header">
             <div class="container">
 
-                <button class="header__btn_back">назад</button>
+                <button class="header__btn_back" area-label="назад">назад</button>
 
-                <button class='header__btn header__btn_delete'>удалить</button>
+                <button class='header__btn header__btn_delete' area-label="удалить">удалить</button>
             </div>
         </header>
 
@@ -155,7 +156,7 @@
         <div class="container book__container">
             <div class="book__wrapper">
                 <img class='book__image' src="img/1984.jpg" alt="cover 1984">
-                <button class="book__label">хочу прочитать</button>
+                <button class="book__label" area-label="хочу прочитать">хочу прочитать</button>
                 <div class="book__content">
                     <h3 class="book__title">Гарри Поттер и Философский камень</h3>
                     <p class="book__autor">Джоан Роулинг</p>
@@ -189,7 +190,7 @@
         </div>
 
         <footer class="footer">
-            <button class="footer__btn book_label">хочу прочитать</button>
+            <button class="footer__btn book_label" area-label="хочу прочитать">хочу прочитать</button>
         </footer>
     </section>
 
@@ -197,9 +198,9 @@
         <header class="header add__header">
             <div class="container">
 
-                <button class="header__btn_back">назад</button>
+                <button class="header__btn_back" aria-label="назад">назад</button>
 
-                <button class='header__btn header__btn_search'>поиск</button>
+                <button class='header__btn header__btn_search' aria-label="поиск">поиск</button>
             </div>
         </header>
 
@@ -252,7 +253,7 @@
                             <li class="status__item"><input class="status__radio" type="radio" name="label"
                                     id="not_finish" value="not_finish"><label class="status__label" for="not_finish">не
                                     дочитал</label></li>
-                            <ul>
+                        </ul>
                     </fieldset>
 
 
@@ -279,7 +280,7 @@
 
 
                 <div class="footer">
-                    <button type='button' class="footer__btn book_label add__btn">Далее</button>
+                    <button type='button' class="footer__btn book_label add__btn" aria-label="Далее">Далее</button>
                 </div>
             </div>
 
